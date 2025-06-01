@@ -1,0 +1,9 @@
+/data/**
+/logs/**
+/saved_models/**
+
+# Environments:
+venv/
+
+# Negation => Not gitignore => Do not ignore => Include
+!**/.gitkeep
