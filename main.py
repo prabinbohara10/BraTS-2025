@@ -16,6 +16,11 @@ from monai.metrics import DiceMetric, SurfaceDiceMetric
 from dataset import PatchDataset
 from train import debug_train
 
+
+# Wandb setup
+WANDB_API_KEY = "2ee0bb0e60f650d41059feeb5ab5ce243edf12c7"
+wandb.login(key=WANDB_API_KEY)
+
 # hyperparameters
 batch_size = 2
 img_size = (128,128,128) # if patch turned on, img_size=patch_size

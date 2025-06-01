@@ -3,4 +3,16 @@ nibabel
 scikit-learn
 tensorflow
 
+tqdm
+torch
+wandb
+loguru
+torchmetrics
+monai
+matplotlib
+einops
+
+
+# not available in graham
 splitfolders
+
