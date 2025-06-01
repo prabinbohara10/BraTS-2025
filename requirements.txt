@@ -14,5 +14,5 @@ einops
 
 
 # not available in graham
-splitfolders
+#splitfolders
 

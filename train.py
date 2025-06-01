@@ -3,6 +3,9 @@ import torch
 import torch.nn.functional as F
 import wandb
 
+from monai.transforms import Compose, Activations
+post_pred = Compose([Activations(softmax=True,dim=1)])
+
 # train function
 def debug_train(data_loader, val_dataloader, model, optimizer, loss_fn, best_loss, patience, metrics, wandb_run_obj, max_epochs, device):
     
