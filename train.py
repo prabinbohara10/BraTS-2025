@@ -3,8 +3,12 @@ import torch
 import torch.nn.functional as F
 import wandb
 
+from utils.utils import get_image_to_log
+
 from monai.transforms import Compose, Activations
 post_pred = Compose([Activations(softmax=True,dim=1)])
+
+label_channel_names = ['necrotic', 'edema', 'enhancing']
 
 # train function
 def debug_train(data_loader, val_dataloader, model, optimizer, loss_fn, best_loss, patience, metrics, wandb_run_obj, max_epochs, device):
