@@ -1,0 +1,6 @@
+numpygit a
+nibabel
+scikit-learn
+tensorflow
+
+splitfolders
