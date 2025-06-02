@@ -135,7 +135,7 @@ def debug_train(data_loader, val_dataloader, model, optimizer, loss_fn, best_los
                 best_loss = val_loss
                 patience_counter = 0
     
-                best_model_path = f"best_model_epoch_{epoch}.pth"
+                best_model_path = f"saved_models/best_model_epoch_{epoch}.pth"
                 torch.save(model.state_dict(), best_model_path)
                 
                 artifact = wandb.Artifact(
