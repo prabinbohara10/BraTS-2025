@@ -5,5 +5,10 @@
 # Environments:
 venv/
 
+
+# environment variables:
+.env
+
+
 # Negation => Not gitignore => Do not ignore => Include
 !**/.gitkeep
