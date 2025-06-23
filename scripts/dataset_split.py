@@ -53,6 +53,7 @@ if __name__ == "__main__":
     
     train_ratio = 0.7
     val_ratio = 0.3
+    # If you want to include a test set, set test_ratio > 0
     test_ratio = 0.0
 
     image_files = sorted(os.listdir(image_dir))
